@@ -22,7 +22,7 @@
 
     <div class="container">
       <div class="header">
-        <h3 class="text"><center>KVQA: Knowledge-aware Visual Question Answering</center></h3>
+        <h3 class="text"><center>OCR-VQA: Visual Question Answering by Reading Text in Images</center></h3>
        </div>
 
  <div class="container">
@@ -47,39 +47,33 @@ A: <font color="green">Person in the center</font>
       <div class="row">
         <h3>Motivation</h3>
         <p style="text-align: justify;">                   
-Visual Question Answering (VQA) has emerged as an important
-problem spanning Computer Vision, Natural Language
-Processing and Artificial Intelligence (AI). In conventional
-VQA, one may ask questions about an image which can be
-answered purely based on its content. For example, given
-an image with people in it, a typical VQA question may
-inquire about the number of people in the image. More recently,
-there is growing interest in answering questions which
-require commonsense knowledge involving common nouns
-(e.g., cats, dogs, microphones) present in the image. In spite
-of this progress, the important problem of answering questions
-requiring world knowledge about named entities (e.g.,
-Barack Obama, White House, United Nations) in the image
-has not been addressed in prior research. We address this
-gap in this paper, and introduce KVQA – the first dataset
-for the task of (world) knowledge-aware VQA. KVQA consists
-of 183K question-answer pairs involving more than 18K
-named entities and 24K images. Questions in this dataset
-require multi-entity, multi-relation, and multi-hop reasoning
-over large Knowledge Graphs (KG) to arrive at an answer. To
-the best of our knowledge, KVQA is the largest dataset for
-exploring VQA over KG. Further, we also provide baseline
-performances using state-of-the-art methods on KVQA.
+The problem of answering questions about an
+image is popularly known as visual question answering (or
+VQA in short). It is a well-established problem in computer
+vision. However, none of the VQA methods currently utilize the
+text often present in the image. These “texts in images” provide
+additional useful cues and facilitate better understanding of
+the visual content. In this paper, we introduce a novel task of
+visual question answering by reading text in images, i.e., by
+optical character recognition or OCR. We refer to this problem
+as OCR-VQA. To facilitate a systematic way of studying this
+new problem, we introduce a large-scale dataset, namely
+OCR-VQA–200K. This dataset comprises of 207,572 images of book
+covers and contains more than 1 million question-answer pairs
+about these images. We judiciously combine well-established
+techniques from OCR and VQA to present a novel baseline
+for OCR-VQA–200K. The experimental results and rigorous
+analysis demonstrate various challenges present in this dataset
+leaving ample scope for the future research. We are optimistic
+that this new task along with compiled dataset will open-
+up many exciting research avenues for the document image
+analysis and VQA community
         </p>
       </div>
       <div class="row">
         <h3>Highlights</h3>
      <ul> 
-      <li> The largest dataset for VQA over KG (as on November 14, 2018)</li>
-     <li> An important but unexplored problem of VQA involving named entities in an image. </li>
-     <li> Visual entity linking problem in web-scale </li>
-     <li> Challenges for Computer Vision: face identification at web-scale </li>
-     <li> Challenges for NLP: reasoning over KG </li>s
+      
      </ul>
                
      </div>
@@ -101,36 +95,28 @@ performances using state-of-the-art methods on KVQA.
          <h3 id="datasetD">Dataset: Downloads</h3>
         
             <div class="row">
-<p><a href="">KVQA1.0 - dataset images</a> (XX GB)<br>
-<p><a href="">KVQA1.0 - reference images</a> (XX GB)<br>
-<p><a href="">KVQA1.0 - Other supporting files</a> (XX GB)<br>
-<br>
-<a href="README.txt">README</a><br>
-<a href="update.txt">Updates</a></p>
 <hr>
 
 
-      <div class="row">
-         <h3 id="code"> Baseline models and code </h3>
-           Coming soon .. 
+     
            
 
 
 <h3><strong><span style="font-size: 12pt;">Bibtex</span></strong></h3>
 <p>If you use this dataset, please cite:</p>
-<pre><tt>@InProceedings{shahMYP18,
-  author    = "Shah, S., Mishra, A., Yadati, N. and Talukdar, P.~P.",
-  title     = "KVQA: Knowledge-Aware Visual Question Answering",
-  booktitle = "AAAI",
+<pre><tt>@InProceedings{mishraICDAR19,
+  author    = "Anand Mishra and Shashank Shekhar and Ajeet Kumar Singh and Anirban Chakraborty",
+  title     = "OCR-VQA: Visual Question Answering by Reading Text in Images",
+  booktitle = "ICDAR",
   year      = "2019",
 }</tt></pre>
 <hr>
 
         <h3>Publications</h3>
        <br>
-Sanket Shah*, Anand Mishra*, Naganand Yadati, Partha Pratim Talukdar, <b>KVQA: Knowledge-Aware Visual Question Answering</b>, AAAI 2019
-[<a href=""><u>pdf</u></a>][<a href=""><u>Abstract</u></a>][<a href="kvqa_ProjectFiles/KVQA-AAAI19Spotlight_v2.pdf
-"><u>Spotlight slides</u></a>] (*: Equal contributions)
+Anand Mishra, Shashank Shekhar, Ajeet Kumar Singh, Anirban Chakraborty, <b>OCR-VQA: Visual Question Answering by Reading Text in Images</b>, AAAI 2019
+[<a href=""><u>pdf</u></a>][<a href=""><u>Abstract</u></a>][<a href="
+"><u>Spotlight slides</u></a>] 
 
 <br>
 <br>
@@ -140,16 +126,13 @@ Sanket Shah*, Anand Mishra*, Naganand Yadati, Partha Pratim Talukdar, <b>KVQA: K
  <div class="row">
        <h3>People</h3>
         <a href="https://anandmishra22.github.io/"><u>Anand Mishra</u></a> <br>
-        <a href="http://talukdar.net/"><u>Partha Talukdar</u></a><br>
-        <a href=""> <u>Sanket Shah</u></a> <br>
-        <a href=""> <u>Naganand Yadati</u></a> <br>
         
       </div>
 
 
       <div class="row">
        <h3>Acknowledgements</h3>
-        <p> Authors would like to thank MHRD, Govt. of India and Intel Corporation for partly supporting this work. 
+        <p> Authors would like to thank MHRD, Govt. of India for partly supporting this work. 
         </p>
       </div>
       
